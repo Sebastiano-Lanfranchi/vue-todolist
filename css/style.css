@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resize{
+  width: 800px;
+  height: 200px;
+}
+
+.center{
+  text-align: center;
+}
+
+#root{
+
+}

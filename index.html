@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/35b3b34844.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title></title>
+  </head>
+  <body>
+    <div id="root" class="center">
+      <img src="img/logo.png" class="resize" alt="">
+
+       <div class="center">
+         <input v-model="message" @keyup.13="submitCode" placeholder="Nuovo Todo">
+         <button @click="submitCode">Aggiungi</button>
+         <ul id="listToDo">
+           <li v-for="(data, index) in inputData" :key="index" @click="deleteData(index)"><i class="fas fa-times"></i>{{data}}</li>
+         </ul>
+       </div>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
